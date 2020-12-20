@@ -1,0 +1,52 @@
+$bg-color: #121212;
+
+body {
+  background-color: $bg-color;
+  font-family: 'Courier New', monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#cl {
+  display: flex;
+  #command {
+    display: block;
+  }
+  #cursor {
+    display: block;
+    width: 0.5rem;
+    height: 1rem;
+  }
+  #cursor.on {
+    background-color: gray;
+  }
+}
+
+.branch {
+  color: #006600;
+}
+
+.trunk {
+  color: darkslategray;
+}
+
+.lamp {
+  color: #555555;
+}
+
+#tree.red .lamp.red {
+  color: red;
+}
+
+#tree.blue .lamp.blue {
+  color: blue;
+}
+
+#tree.green .lamp.green {
+  color: #00ff00;
+}
+
+#tree.yellow .lamp.yellow {
+  color: yellow;
+}
